@@ -1,7 +1,7 @@
 # Comparative analysis of LoRA fine-tuned BERT and DistilBERT for detecting AI-generated texts
 
 📝 Classify the essay to AI-generated and human texts. <br>
-🤖 Investigate the performance of BERT with its lighter variation, DistilBERT, when fine-tuning using the LoRA method.
+🤖 Investigate the performance of `BERT` with its lighter variation, `DistilBERT`, when fine-tuning using the `LoRA` method.
 
 <img src="https://github.com/phanuphatsrisukhawasu/detecting-ai-generated-texts-with-distilbert/blob/b8bb600488d3ef0108c355936d2ebdf4154cf534/thumbnail.jpg" alt="Graphical Abstract">
 
@@ -18,13 +18,18 @@ The recent advancement in generative AI has significantly impacted every industr
 
 ## 🛠️ Methods
 
-In this project, I investigate the performance of fine-tuned BERT with its lighter variation, DistilBERT, for classifying human and AI texts. Both models were carried out by the Hugging Face Transformers. They were fine-tuned using LoRA (Low-Rank Adaptation) for the binary classification tasks.
+In this project, I investigate the performance of fine-tuned `BERT` with its lighter variation, `DistilBERT`, for classifying human and AI texts. Both models were carried out by the Hugging Face Transformers. They were fine-tuned using `LoRA` (Low-Rank Adaptation) for the binary classification tasks.
 
-The dataset used in this project was compiled from Kaggle (see the reference). In this dataset, there are almost 27k instances of essays written by humans and LLM. The training was done on Google Colab using T4 GPU. I evaluate the performance of both models using simple accuracy metrics.
+The dataset used in this project was compiled from Kaggle (see the reference). In this dataset, there are almost 27k instances of essays written by humans and LLMs. The training was done on Google Colab using T4 GPU. I evaluate the performance of both models using simple accuracy metrics.
 
 ## 📊 Key Findings
 
-The findings indicate that after training for one epoch, the performance of both models is comparatively the same. However, I found that DistilBERT's training time (12 minutes 13 seconds) was much faster than that of BERT (23 minutes 45 seconds). The detailed performance, including training and validation losses, are shown in the table below. Despite its fewer parameters, the results suggest that DistilBERT could be as good as BERT for this task.
+The findings indicate that after training for one epoch, the performance of both models is comparatively the same. However, I found that `DistilBERT`'s training time (12 minutes 13 seconds) was much faster than that of `BERT` (23 minutes 45 seconds). The detailed performance, including training and validation losses, are shown in the table below. Despite its fewer parameters, the results suggest that `DistilBERT` could be as good as `BERT` for this task.
+
+| Model | Training Loss | Validation Loss | Validation Accuracy | Training Time |
+|-------|---------------|-----------------|---------------------|---------------|
+| `BERT` | 0.018 | 0.071 | 98.6% | 23m 45s |
+| `DistilBERT` | 0.018 | 0.041 | 99.0% | 12m 13s |
 
 ## **🧑🏻‍🏫 References**
 
