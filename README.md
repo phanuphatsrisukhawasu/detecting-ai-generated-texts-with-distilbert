@@ -3,6 +3,8 @@
 📝 Classify the essay to AI-generated and human texts. <br>
 🤖 Investigate the performance of BERT with its lighter variation, DistilBERT, when fine-tuning using the LoRA method.
 
+<img src="https://github.com/phanuphatsrisukhawasu/detecting-ai-generated-texts-with-distilbert/blob/b8bb600488d3ef0108c355936d2ebdf4154cf534/thumbnail.jpg" alt="Graphical Abstract">
+
 [![Python](https://img.shields.io/static/v1?message=Python&logo=python&labelColor=5c5c5c&color=3776AB&logoColor=white&label=%20)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/static/v1?message=PyTorch&logo=pytorch&labelColor=5c5c5c&color=EE4C2C&logoColor=white&label=%20)](https://pytorch.org/)
 [![Jupyter](https://img.shields.io/static/v1?message=Jupyter&logo=jupyter&labelColor=5c5c5c&color=F37626&logoColor=white&label=%20)](https://jupyter.org/)
